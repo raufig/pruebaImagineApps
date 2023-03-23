@@ -3,7 +3,7 @@ const userCtrl = {};
 const User = require('../models/users');
 const Product = require('../models/product');
 userCtrl.createUser = async (req, res) => {
-    if(!req.body){
+    if(!req.body.name || !req.body.lastName || !req.body.email ){
         res.status(400)
         res.send('user information is necessary');
     }else{

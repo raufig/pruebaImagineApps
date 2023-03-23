@@ -27,6 +27,9 @@ response:
 ```
 POST - http://localhost:8080/api/users/create
 Allows the creation of new users
+
+error message 'user information is necessary' if name, lastName and email are not sent to the API
+
 body request:
 ```JSON
 {
@@ -49,6 +52,10 @@ PUT - http://localhost:8080/api/users/update
 Receives information from the user who update the products and responds with the information of the updated product
 (I add an array with the information of the userName and the date of the update to have a log of updates)
 
+error message:
+'all user information are necessary' if the username or id is not sent
+'product id to update are necessary' if the product id is not sent
+'user not registered in DB' : 'product not registered in DB' if the user or product is not registered in the DB
 body request:
 ```JSON
 {
