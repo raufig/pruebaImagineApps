@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6305a58d8cfe8a97ee6c37c7"
+  },
+  "name": "Keyboard",
+  "price": 10.76,
+  "quantity": 34
+},{
+  "_id": {
+    "$oid": "6305a58d8cfe8a97ee6c37c8"
+  },
+  "name": "Mouse",
+  "price": 9.87,
+  "quantity": 5
+}]

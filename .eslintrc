@@ -1,0 +1,12 @@
+{
+    "root": true,
+    "plugins": ["prettier"],
+    "extends": [
+        "prettier",
+        "airbnb"
+    ],
+    "rules": {
+        "prettier/prettier": 2,
+        "linebreak-style": 0
+    }
+}
