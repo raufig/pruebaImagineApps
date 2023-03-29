@@ -36,7 +36,7 @@ userCtrl.updateProducts = async (req,res) => {
             res.status(400)
             res.send(message)
         }else{
-            const result = await Product.findByIdAndUpdate(checkInfo.product._id, {'$push':{updatedBy:{userName:checkInfo.user.name}}}, {new:true})
+            const result = await Product.findByIdAndUpdate(checkInfo.product._id, {'$push':{updatedBy:checkInfo.user._id}}, {new:true})
             res.status(200)
             res.json(result)
         } 
